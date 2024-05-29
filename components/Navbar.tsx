@@ -5,7 +5,7 @@ import MobileNav from './MobileNav'
 
 const Navbar = () => {
   return (
-    <nav className='flex justify-between fixed z-50 w-full bg-dark-1 px-6 py-4 lg:px-10 '>
+    <nav className='flex justify-between items-center fixed z-50 w-full bg-dark-1 px-6 py-4 lg:px-10 '>
       <Link
       href = "/"
       className='flex items-center gap-1'>
@@ -19,7 +19,7 @@ const Navbar = () => {
         <p className='text-[26px] font-extrabold text-white max-sm:hidden'>Jhoom</p>
       </Link>
 
-      <div className='flex justify-between gap-5 '>
+      <div className='flex justify-between items-center gap-5 '>
         {/* Clerk User Management  */}
 
         <MobileNav />
