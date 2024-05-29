@@ -21,7 +21,6 @@ const Navbar = () => {
 
       <div className='flex justify-between items-center gap-5 '>
         {/* Clerk User Management  */}
-
         <MobileNav />
       </div>
     </nav>
