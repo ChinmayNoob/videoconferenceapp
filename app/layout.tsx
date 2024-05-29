@@ -18,7 +18,23 @@ export default function RootLayout({
   return (
 
     <html lang="en">
-      <ClerkProvider>
+      <ClerkProvider
+      appearance={{
+        layout:{
+          logoImageUrl:'/icons/jhoom-logo.svg',
+          socialButtonsVariant:'blockButton',
+          logoPlacement:'inside'
+        },
+        variables:{
+          colorText:'#fff',
+          colorPrimary:'#0E78F9',
+          colorBackground:'#1c1f2e',
+          colorInputBackground:'#252a41',
+          colorInputText:'#fff'
+        }
+      }}
+      
+      >
         <body className={`{inter.className} bg-dark-2`}>{children}</body>
 
 
