@@ -17,20 +17,16 @@ const initialValues = {
 
 
 
-
 const MeetingTypeList = () => {
 
     const router = useRouter();
     const [meetingState, setMeetingState] = useState<'isScheduleMeeting' | 'isJoiningMeeting' | 'isInstantMeeting' | undefined>();
-
     const { user } = useUser();
-
     const client = useStreamVideoClient();
     const [callDetail, setCallDetail] = useState<Call>();
     const { toast } = useToast();
-
-
     const [values, setValues] = useState(initialValues)
+
 
     const createMeeting = async () => {
         if (!client || !user) return;
@@ -65,11 +61,9 @@ const MeetingTypeList = () => {
                 title: 'Meeting Created',
             });
 
-
         } catch (error) {
             console.log(error);
             toast({ title: 'Failed to create Meeting' });
-
         }
     }
     return (
