@@ -1,7 +1,18 @@
 import Navbar from '@/components/Navbar'
 import SideBar from '@/components/SideBar'
 import { Sidebar } from 'lucide-react'
+import { Metadata } from 'next';
 import React, { ReactNode } from 'react'
+
+
+export const metadata: Metadata = {
+  title: "YOOM",
+  description: "Video calling App",
+  icons: {
+    icon: "/icons/logo.svg",
+  },
+};
+
 
 function HomeLayout({children}:{children : ReactNode}) {
   return (
