@@ -1,8 +1,8 @@
 "use client"
 import { DeviceSettings, VideoPreview, useCall, useCallStateHooks } from '@stream-io/video-react-sdk'
 import React, { useEffect, useState } from 'react'
-import { Alert } from './ui/alert';
 import { Button } from './ui/button';
+import Alert from './Alert';
 
 const MeetingSetup = ({
   setIsSetupComplete,
